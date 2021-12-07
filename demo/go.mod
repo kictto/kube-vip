@@ -1,3 +1,3 @@
-module github.com/kube-vip/kube-vip/demo
+module github.com/kictto/kube-vip/demo
 
 go 1.13

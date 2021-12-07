@@ -5,9 +5,9 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/kube-vip/kube-vip/pkg/bgp"
-	"github.com/kube-vip/kube-vip/pkg/cluster"
-	"github.com/kube-vip/kube-vip/pkg/packet"
+	"github.com/kictto/kube-vip/pkg/bgp"
+	"github.com/kictto/kube-vip/pkg/cluster"
+	"github.com/kictto/kube-vip/pkg/packet"
 	"github.com/packethost/packngo"
 	log "github.com/sirupsen/logrus"
 )

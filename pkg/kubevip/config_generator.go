@@ -6,8 +6,8 @@ import (
 	"strconv"
 
 	"github.com/ghodss/yaml"
-	"github.com/kube-vip/kube-vip/pkg/bgp"
-	"github.com/kube-vip/kube-vip/pkg/detector"
+	"github.com/kictto/kube-vip/pkg/bgp"
+	"github.com/kictto/kube-vip/pkg/detector"
 	log "github.com/sirupsen/logrus"
 	appv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
@@ -614,7 +614,7 @@ func generatePodSpec(c *Config, imageVersion string, inCluster bool) *corev1.Pod
 			Containers: []corev1.Container{
 				{
 					Name:            "kube-vip",
-					Image:           fmt.Sprintf("ghcr.io/kube-vip/kube-vip:%s", imageVersion),
+					Image:           fmt.Sprintf("ghcr.io/kictto/kube-vip:%s", imageVersion),
 					ImagePullPolicy: corev1.PullAlways,
 					SecurityContext: &corev1.SecurityContext{
 						Capabilities: &corev1.Capabilities{

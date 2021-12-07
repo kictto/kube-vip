@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/kube-vip/kube-vip/pkg/bgp"
+	"github.com/kictto/kube-vip/pkg/bgp"
 	"github.com/prometheus/client_golang/prometheus"
 	log "github.com/sirupsen/logrus"
 

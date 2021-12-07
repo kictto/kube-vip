@@ -3,7 +3,7 @@ package cluster
 import (
 	"context"
 
-	"github.com/kube-vip/kube-vip/pkg/vip"
+	"github.com/kictto/kube-vip/pkg/vip"
 )
 
 // StartDDNS should start go routine for dhclient to hold the lease for the IP

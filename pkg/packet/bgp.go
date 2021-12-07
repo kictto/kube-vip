@@ -3,8 +3,8 @@ package packet
 import (
 	"fmt"
 
-	"github.com/kube-vip/kube-vip/pkg/bgp"
-	"github.com/kube-vip/kube-vip/pkg/kubevip"
+	"github.com/kictto/kube-vip/pkg/bgp"
+	"github.com/kictto/kube-vip/pkg/kubevip"
 	"github.com/packethost/packngo"
 	log "github.com/sirupsen/logrus"
 )

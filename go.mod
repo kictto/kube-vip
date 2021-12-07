@@ -1,4 +1,4 @@
-module github.com/kube-vip/kube-vip
+module github.com/kictto/kube-vip
 
 go 1.14
 

@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/ghodss/yaml"
-	"github.com/kube-vip/kube-vip/pkg/kubevip"
+	"github.com/kictto/kube-vip/pkg/kubevip"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	appv1 "k8s.io/api/core/v1"
@@ -104,7 +104,7 @@ var kubeVipSampleManifest = &cobra.Command{
 				Containers: []appv1.Container{
 					{
 						Name:  "kube-vip",
-						Image: fmt.Sprintf("ghcr.io/kube-vip/kube-vip:%s", Release.Version),
+						Image: fmt.Sprintf("ghcr.io/kictto/kube-vip:%s", Release.Version),
 						SecurityContext: &appv1.SecurityContext{
 							Capabilities: &appv1.Capabilities{
 								Add: []appv1.Capability{

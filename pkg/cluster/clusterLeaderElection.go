@@ -10,11 +10,11 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/kube-vip/kube-vip/pkg/bgp"
-	"github.com/kube-vip/kube-vip/pkg/k8s"
-	"github.com/kube-vip/kube-vip/pkg/kubevip"
-	"github.com/kube-vip/kube-vip/pkg/loadbalancer"
-	"github.com/kube-vip/kube-vip/pkg/packet"
+	"github.com/kictto/kube-vip/pkg/bgp"
+	"github.com/kictto/kube-vip/pkg/k8s"
+	"github.com/kictto/kube-vip/pkg/kubevip"
+	"github.com/kictto/kube-vip/pkg/loadbalancer"
+	"github.com/kictto/kube-vip/pkg/packet"
 
 	"github.com/packethost/packngo"
 

@@ -17,7 +17,7 @@ This will return a CIDR range such as `172.18.0.0/16` and from here we can selec
 ## Deploy the Kube-Vip Cloud Controller
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/kube-vip/kube-vip-cloud-provider/main/manifest/kube-vip-cloud-controller.yaml
+kubectl apply -f https://raw.githubusercontent.com/kictto/kube-vip-cloud-provider/main/manifest/kube-vip-cloud-controller.yaml
 ```
 
 ## Add our Address range
@@ -40,7 +40,7 @@ kubectl apply -f https://kube-vip.io/manifests/rbac.yaml
 
 We can parse the GitHub API to find the latest version (or we can set this manually)
 
-`KVVERSION=$(curl -sL https://api.github.com/repos/kube-vip/kube-vip/releases | jq -r ".[0].name")`
+`KVVERSION=$(curl -sL https://api.github.com/repos/kictto/kube-vip/releases | jq -r ".[0].name")`
 
 or manually:
 
@@ -50,11 +50,11 @@ The easiest method to generate a manifest is using the container itself, below w
 
 ### containerd
 
-`alias kube-vip="ctr run --rm --net-host ghcr.io/kube-vip/kube-vip:$KVVERSION vip /kube-vip"`
+`alias kube-vip="ctr run --rm --net-host ghcr.io/kictto/kube-vip:$KVVERSION vip /kube-vip"`
 
 ### Docker
 
-`alias kube-vip="docker run --network host --rm ghcr.io/kube-vip/kube-vip:$KVVERSION"`
+`alias kube-vip="docker run --network host --rm ghcr.io/kictto/kube-vip:$KVVERSION"`
 
 ## Deploy Kube-vip as a DaemonSet
 

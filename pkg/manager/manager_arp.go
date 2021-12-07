@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/kamhlos/upnp"
-	"github.com/kube-vip/kube-vip/pkg/cluster"
+	"github.com/kictto/kube-vip/pkg/cluster"
 	log "github.com/sirupsen/logrus"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/tools/leaderelection"

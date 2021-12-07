@@ -9,13 +9,13 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/kube-vip/kube-vip/pkg/k8s"
+	"github.com/kictto/kube-vip/pkg/k8s"
 
 	"github.com/kamhlos/upnp"
-	"github.com/kube-vip/kube-vip/pkg/bgp"
-	"github.com/kube-vip/kube-vip/pkg/cluster"
-	"github.com/kube-vip/kube-vip/pkg/kubevip"
-	"github.com/kube-vip/kube-vip/pkg/vip"
+	"github.com/kictto/kube-vip/pkg/bgp"
+	"github.com/kictto/kube-vip/pkg/cluster"
+	"github.com/kictto/kube-vip/pkg/kubevip"
+	"github.com/kictto/kube-vip/pkg/vip"
 	"github.com/prometheus/client_golang/prometheus"
 	log "github.com/sirupsen/logrus"
 	"k8s.io/client-go/kubernetes"
